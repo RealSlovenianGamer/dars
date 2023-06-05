@@ -102,9 +102,21 @@ img {
 .demo:hover {
   opacity: 1;
 }
+dialog {
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  z-index: 10;
+  border-radius: 0.25rem;
+}
         </style>
 </head>
 <body>
+  <dialog>
+    <span style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 2rem;">Spletna stran je namenjena samo za učne namene!</span>
+    <br>  
+    <button onClick="closeSoglasje()">Soglašam</button>
+  </dialog>
 <!--     <input type="text" id="url" value="https://kamere.dars.si/kamere/Sentvid_Jug/cam5.jpg">
     <button onclick="download()">start</button> -->
       <h1>AC Kamere - Ajd -> LJ</h1>
@@ -387,6 +399,22 @@ Uvoz Koseze Podutik
   </div>
     <script src="gallery.js"></script>
     <script>
+      const dialog = document.querySelector("dialog")
+      dialog.showModal() // opens the dialog
+      dialog.addEventListener("click", e => {
+  const dialogDimensions = dialog.getBoundingClientRect()
+  if (
+    e.clientX < dialogDimensions.left ||
+    e.clientX > dialogDimensions.right ||
+    e.clientY < dialogDimensions.top ||
+    e.clientY > dialogDimensions.bottom
+  ) {
+    dialog.close()
+  }
+})
+function closeSoglasje(){
+  dialog.close()
+}
       //document.getElementById('statusCheck').addEventListener('click', () => console.log('window.navigator.onLine is ' + window.navigator.onLine));
       console.log(window.navigator.onLine)
       let slideIndex = 1;
