@@ -2,118 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download img</title>
-    <style>
-        .grid-container {
-          display: grid;
-          grid-template-columns: auto auto auto;
-          background-color: #2196F3;
-        }
-        .grid-item {
-          background-color: rgba(255, 255, 255, 0.8);
-          border: 1px solid rgba(0, 0, 0, 0.8);
-          font-size: 30px;
-          text-align: center;
-        }
-        * {
-          font-family: Arial, Helvetica, sans-serif;
-        }
-        </style>
+    <title>Kamere Primorka</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<!--     <input type="text" id="url" value="https://kamere.dars.si/kamere/Sentvid_Jug/cam5.jpg">
-    <button onclick="download()">start</button> -->
-    <h1>AC Kamere - Ajd -> LJ</h1>
-    <div class="grid-container">
-        <div class="grid-item">1. Priključek AC Ajdovščina<img src="../assets/img/cam.jpg" alt="cam" id="cam1"></div>
-        <div class="grid-item">2. AC Podnanos II (obe smeri)<img src="../assets/img/cam.jpg" alt="cam" id="cam2"></div>
-        <div class="grid-item">3. 
-AC Podnanos I (obe smeri)
-<img src="../assets/img/cam.jpg" alt="cam" id="cam3"></div>
-        <div class="grid-item">4.
-Viadukt Lozice (obe smeri)
-          <img src="../assets/img/cam.jpg" alt="cam" id="cam4"></div>
-        <div class="grid-item">5.
-pokriti vkop Rebrnice (obe smeri)
-          <img src="../assets/img/cam.jpg" alt="cam" id="cam5"></div>
-        <div class="grid-item">6.
-Pred razcepom Nanos (obe smeri)
-          <img src="../assets/img/cam.jpg" alt="cam" id="cam6"></div>
-        <div class="grid-item">7.
-razcep nanos smer LJ
-          <img src="../assets/img/cam.jpg" alt="cam" id="cam7"></div>
-        <div class="grid-item">8.
-Dilce; Postojna - Razdrto I (obe smeri)
-          <img src="../assets/img/cam.jpg" alt="cam" id="cam8"></div>
-        <div class="grid-item">9.
-Dilce; Postojna - Razdrto II (obe smeri)
-          <img src="../assets/img/cam.jpg" alt="cam" id="cam9"></div>
-        <div class="grid-item">10. 
-Portal P3 obe smeri
-          <img src="../assets/img/cam.jpg" alt="cam" id="cam10"></div>
-        <div class="grid-item">11. 
-portal Unec (obe smeri)
-          <img src="../assets/img/cam.jpg" alt="cam" id="cam11"></div>
-        <div class="grid-item">12. 
-portal Unec - AC izvoz (obe smeri)
-          <img src="../assets/img/cam.jpg" alt="cam" id="cam12"></div>
-        <div class="grid-item">13. 
-viadukt Ivanje Selo I (obe smeri)
-          <img src="../assets/img/cam.jpg" alt="cam" id="cam13"></div>
-        <div class="grid-item">14. 
-viadukt Ivanje Selo II (obe smeri)
-          <img src="../assets/img/cam.jpg" alt="cam" id="cam14"></div>
-        <div class="grid-item">15. 
-Počivališče Lom (obe smeri)
-          <img src="../assets/img/cam.jpg" alt="cam" id="cam15"></div>
-        <div class="grid-item">16. 
-Počivališče Lom Petrol (obe smeri)
-          <img src="../assets/img/cam.jpg" alt="cam" id="cam16"></div>
-        <div class="grid-item">17.
-Tankovski most (obe smeri)
-          <img src="../assets/img/cam.jpg" alt="cam" id="cam17"></div>
-        <div class="grid-item">18. 
-Štampetov most I (obe smeri)
-          <img src="../assets/img/cam.jpg" alt="cam" id="cam18"></div>
-        <div class="grid-item">19. 
-Štampetov most II (obe smeri)
-          <img src="../assets/img/cam.jpg" alt="cam" id="cam19"></div>
-        <div class="grid-item">20. 
-viadukt Verd (obe smeri)
-          <img src="../assets/img/cam.jpg" alt="cam" id="cam20"></div>
-        <div class="grid-item">21. 
-Sinja Gorica (obe smeri)
-          <img src="../assets/img/cam.jpg" alt="cam" id="cam21"></div>
-        <div class="grid-item">22. 
-Log pri Brezovici I (obe smeri)
-          <img src="../assets/img/cam.jpg" alt="cam" id="cam22"></div>
-        <div class="grid-item">23. 
-Log pri Brezovici II (obe smeri)
-          <img src="../assets/img/cam.jpg" alt="cam" id="cam23"></div>
-        <div class="grid-item">24. 
-AC priključek Brezovica (obe smeri)
-          <img src="../assets/img/cam.jpg" alt="cam" id="cam24"></div>
-        <div class="grid-item">25. 
-razcep Kozarje Zahod
-          <img src="../assets/img/cam.jpg" alt="cam" id="cam25"></div>
-        <div class="grid-item">26. 
-Izvoz Brdo smer LJ (obe smeri)
-          <img src="../assets/img/cam.jpg" alt="cam" id="cam26"></div>
-        <div class="grid-item">27. 
-Priključek brdo smer LJ - Policijska niša
-          <img src="../assets/img/cam.jpg" alt="cam" id="cam27"></div>
-        <div class="grid-item">28. 
-Uvoz Koseze Podutik
-          <img src="../assets/img/cam.jpg" alt="cam" id="cam28"></div>
-        <div class="grid-item">29. 
-Šentvid Koseze smer KP
-          <img src="../assets/img/cam.jpg" alt="cam" id="cam29"></div>
-        <div class="grid-item">30. 
-Šentvid Koseze nimam pojma
-          <img src="../assets/img/cam.jpg" alt="cam" id="cam30"></div>
+    <div class="header">
+        <h1>Kamere Primorska AC</h1>
+        <div class="links">
+            <a href="/index.html">Domov</a>
+            <a href="galerija/index.html">Pogled v galeriji</a>
+        </div>
     </div>
-    <script src="../js/primorka.js "></script>
+ 
+    <br>
+    <div class="gallery-container">
+        <div class="image-container">
+            <img id="liveImage" src="" alt="Live Image" onclick="openModal()">
+        </div>
+        <div class="controls">
+            <button onclick="prevImage()">Previous</button>
+            <button onclick="nextImage()">Next</button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
